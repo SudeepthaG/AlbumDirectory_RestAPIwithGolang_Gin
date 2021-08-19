@@ -9,26 +9,34 @@ I have used Golang and Gin framework for this purpose.
  - cd to this folder
 
 
- - To get details about all albums use:
+ ### To get details about all albums use:
  - go get .
  - go run .
  - From a new command line window, use curl to make a request to your running web service. $curl http://localhost:8080/albums
 
 
- - To get details about a specific album use:
+### To get details about a specific album use:
  - go get .
  - go run .
  - $ curl http://localhost:8080/albums/2    Here 2 is your album number
 
  
- - To add an album use:
+ ### To add an album use:
  - go get .
  - go run .
- - $ curl http://localhost:8080/albums \ __
-    --include \ __
-    --header "Content-Type: application/json" \ __
-    --request "POST" \ __
-    --data '{"id": "4","title": "The Modern Sound of Betty Carter","artist": "Betty Carter","price": 49.99}' __
+ - $ curl http://localhost:8080/albums \ 
+
+
+    --include \ 
+
+
+    --header "Content-Type: application/json" \ 
+
+
+    --request "POST" \ 
+
+    
+    --data '{"id": "4","title": "The Modern Sound of Betty Carter","artist": "Betty Carter","price": 49.99}'
 
 
 
